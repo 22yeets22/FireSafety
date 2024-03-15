@@ -1,6 +1,6 @@
 # Fire safety wristbands
 > [!NOTE]
-> This project was created for the SEFH Science Fair
+> This project was created for the SEFH Science Fair  
 > Runs on Uno's and testing on Nano
 
 
