@@ -27,6 +27,7 @@ void setup() {
   radio.setPALevel(RF24_PA_LOW);  // Set power level
   radio.setChannel(channel);
   radio.setDataRate(RF24_1MBPS);
+  radio.setPayloadSize(4);
   radio.startListening();  // Start listening for incoming data
 }
 
