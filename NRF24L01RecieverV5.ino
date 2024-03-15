@@ -48,7 +48,7 @@ void loop() {
     startTickTime = millis();
   }
 
-  if (millis() - startTickTime > 60000 * 3 + 5000) {
+  if (millis() - startTickTime > packetRecieveDelay) {
     // More than 3 times no recieved
     Serial.println("Packets not being recieved for 3 times (3 min).");
     digitalWrite(vibrationMotorPin, HIGH);
