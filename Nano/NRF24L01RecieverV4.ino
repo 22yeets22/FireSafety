@@ -47,7 +47,7 @@ void loop() {
       digitalWrite(vibrationMotorPin, HIGH);
       Serial.println("All OK!");
     } else {
-      // Packet is not 0000 or 1111
+      // Packet is not beep or fine
       Serial.print("Corrupted packet: ");
       Serial.println(text);
     }
@@ -56,7 +56,7 @@ void loop() {
 
   if (millis() - startTickTime > packetRecieveDelay) {
     // More than 3 times no recieved
-    Serial.println("Packets not being recieved for 3 times (3 min).");
+    Serial.println("[WARNING] Packets not being recieved for 3 times (3 min).");
     digitalWrite(vibrationMotorPin, HIGH);
   }
 }
