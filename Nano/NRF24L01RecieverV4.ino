@@ -49,7 +49,7 @@ void loop() {
     } else {
       // Packet is not beep or fine
       Serial.print("Corrupted packet: ");
-      Serial.println(text);
+      Serial.println(textString);
     }
     startTickTime = millis();
   }
